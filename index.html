@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Rescue turtles</title>
+        <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"></script>
+    </head>
+    <body>
+        <a-scene physics="gravity:0">
+            <a-assets>
+                <a-asset-item src="cartoon_turtle/scene.gltf" id =turtle></a-asset-item>
+                <a-asset-item src="islands/scene.gltf" id="island"></a-asset-item>
+                <a-asset-item src="researcher/scene.gltf" id="researcher"></a-asset-item>
+                <img src="space (4).jpeg" id="space">
+            </a-assets>
+            <a-entity gltf-model="#island" position="-10 -25 -12" scale="3 3 3"></a-entity>
+            <a-entity kinematic-body look-controls wasd-controls="acceleration:200" camera position="-10 -18 -20">
+                <a-entity position="-5 -5 -12"> 
+                    <a-entity position="0.6 0.13 0" text="5"></a-entity>
+                </a-entity>
+            </a-entity>
+            <a-sky src="#space" rotation="-180 10 0"></a-sky>
+            <a-entity gltf-model="#turtle" position="-4 -24 5" scale="3 3 3"></a-entity>
+        </a-scene>
+    </body>
+</html>
