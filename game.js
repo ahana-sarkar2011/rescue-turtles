@@ -1,0 +1,9 @@
+AFRAME.registerComponent("gamerules",{
+    init:function(){
+       turtlenumber=5
+       this.el.addEventListener("collide",function(e){
+        turtlenumber=turtlenumber-1
+        e.detail.target.el.remove();
+       }) 
+    }
+})
