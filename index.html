@@ -20,16 +20,16 @@
                 <a-entity position="-5 -5 -12"> 
                     <a-entity position="0.6 0.13 0" text="font:aileronsemibold; width:12;color:pink; value: TURTLES\nTo Be RESCUED"></a-entity>
                     <a-entity id="text1" position="-8 0.3 0" text="font:exo2bold; width:30; color:red; align:center; value:5"></a-entity>
-                    <a-entity position="15 0.3 0" text="font:exo2bold; width:20; color:yellow; align:center; "></a-entity>
+                    <a-entity id="text2" position="15 0.3 0" text="font:exo2bold; width:20; color:yellow; align:center; "></a-entity>
                 </a-entity>
             </a-entity>
             <a-sky src="#space" rotation="-180 10 0"></a-sky>
-            <a-entity gltf-model="#researcher" researchermovement position="0 -24 -20" static-body="shape:sphere; sphereRadius:6" scale="3 3 3" rotation="0 180 0"></a-entity>
-            <a-entity gltf-model="#turtle" position="-4 -24 5" static-body="shape:sphere; sphereRadius:6" scale="3 3 3"></a-entity>
-            <a-entity gltf-model="#turtle" position="7 -24 23" static-body="shape:sphere; sphereRadius:6" scale="3 3 3"></a-entity>
-            <a-entity gltf-model="#turtle" position="10 -24 -10" static-body="shape:sphere; sphereRadius:6" scale="3 3 3"></a-entity>
-            <a-entity gltf-model="#turtle" position="3 -24 30" static-body="shape:sphere; sphereRadius:6" scale="3 3 3"></a-entity>
-            <a-entity gltf-model="#turtle" position="-15 -24 10" static-body="shape:sphere; sphereRadius:6" scale="3 3 3"></a-entity>
+            <a-entity gltf-model="#researcher" researchermovement gamerules position="0 -24 -20" static-body="shape:sphere; sphereRadius:6" scale="3 3 3" rotation="0 180 0"></a-entity>
+            <a-entity gltf-model="#turtle" gamerules position="-4 -24 5" static-body="shape:sphere; sphereRadius:9" scale="3 3 3"></a-entity>
+            <a-entity gltf-model="#turtle" gamerules position="7 -24 23" static-body="shape:sphere; sphereRadius:9" scale="3 3 3"></a-entity>
+            <a-entity gltf-model="#turtle" gamerules position="10 -24 -10" static-body="shape:sphere; sphereRadius:9" scale="3 3 3"></a-entity>
+            <a-entity gltf-model="#turtle" gamerules position="3 -24 30" static-body="shape:sphere; sphereRadius:9" scale="3 3 3"></a-entity>
+            <a-entity gltf-model="#turtle" gamerules position="-15 -24 10" static-body="shape:sphere; sphereRadius:9" scale="3 3 3"></a-entity>
         </a-scene>
     </body>
 </html>
